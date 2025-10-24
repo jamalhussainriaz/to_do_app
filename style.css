@@ -1,0 +1,114 @@
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    margin-top: 20px;
+    color: #606c76;
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.6em;
+    font-weight: 300;
+    letter-spacing: .01em;
+    line-height: 1.6;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 112.0rem;
+    padding: 0 2.0rem;
+    position: relative;
+    width: 100%;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    letter-spacing: -.1rem;
+    margin-bottom: 2.0rem;
+    margin-top: 0;
+}
+
+ul{
+    list-style: none; 
+    padding: 0;
+}
+
+.row .column {
+    display: block;
+    flex: 1 1 auto;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.row .column.column-75 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+input[type='text']{
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 0.1rem solid #d1d1d1;
+    border-radius: .4rem;
+    box-shadow: none;
+    box-sizing: inherit;
+    padding: 1.0rem;
+    width: 75%;
+    margin-bottom: 1.5rem;
+}
+
+.button, button, input[type='button'],input[type='submit'] {
+    background-color: #9b4dca;
+    border: 0.1rem solid #9b4dca;
+    border-radius: .4rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    height: 3.8rem;
+    letter-spacing: .1rem;
+    line-height: 3.8rem;
+    padding: 0 3.0rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.task-card {
+    border: 1px solid #ececec; 
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+.task{
+    color: #888;
+}
+.task-done {
+    text-decoration: line-through;
+    color: #888;
+}
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+ul {
+    padding-left: 20px;
+}
+button {
+    cursor: pointer;
+}
