@@ -16,17 +16,20 @@
                 <div class="column column-75">
                     <input type="text" id="inputTask" name="task" placeholder="Enter a new task" required> <button type="submit" id="addTaskbtn" class="button-primary">Add Task</button>
                 </div>
-                <div class="column column-25">
-                    
-                </div>
+                <div class="column column-25"></div>
             </div>
 
             <!-- Task List -->
             <h2>Task List</h2>
-            <ul id="taskList">         
-                
-            </ul>
-
+            <ul id="taskList"></ul>
+            <!-- Modal for viewing single todo -->
+            <div id="viewModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>View Todo</h2>
+                    <p id="viewText"></p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
